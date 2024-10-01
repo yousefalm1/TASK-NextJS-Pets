@@ -9,7 +9,7 @@ function PetItem({ pet }) {
         <Image
           alt={pet.name}
           src={pet.image}
-          className="transform duration-500 ease-in-out hover:scale-110"
+          className="transform duration-500 ease-in-out hover:brightness-75"
           fill
           sizes="100vw" />
       </div>
