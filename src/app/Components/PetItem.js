@@ -19,7 +19,6 @@ function PetItem({ pet }) {
           {pet.description}
         </div>
         <div className="grid grid-cols-2 gap-2">
-
           <button type="button" className="text-palette-dark font-primary font-medium text-base m-4 p-8 pb-1 pt-2 bg-palette-lighter 
             rounded-tl-sm">
             Pet
