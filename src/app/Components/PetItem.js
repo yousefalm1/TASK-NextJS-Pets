@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 function PetItem({ pet }) {
   return (
@@ -7,9 +7,9 @@ function PetItem({ pet }) {
         <Image
           alt={pet.name}
           src={pet.image}
-          layout="fill"
           className="transform duration-500 ease-in-out hover:scale-110"
-        />
+          fill
+          sizes="100vw" />
       </div>
       <div className="h-48 relative">
         <div className="font-primary text-palette-primary text-2xl pt-4 px-4 font-semibold">
