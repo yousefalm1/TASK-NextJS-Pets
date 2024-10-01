@@ -18,14 +18,14 @@ function PetItem({ pet }) {
         <div className="text-lg text-gray-600 p-4 font-primary font-light">
           {pet.description}
         </div>
-        <div
-          className="text-palette-dark font-primary font-medium text-base mb-4 pl-8 pr-4 pb-1 pt-2 bg-palette-lighter 
-            rounded-tl-sm triangle"
-        >
-          <button type="button" className="btn btn-info">
+        <div className="grid grid-cols-2 gap-2">
+
+          <button type="button" className="text-palette-dark font-primary font-medium text-base m-4 p-8 pb-1 pt-2 bg-palette-lighter 
+            rounded-tl-sm">
             Pet
           </button>
-          <button type="button" class="btn btn-info  m-2">
+          <button type="button" className="text-palette-dark font-primary font-medium text-base m-4 p-8 pb-1 pt-2 bg-palette-lighter 
+            rounded-tl-sm">
             Adopt
           </button>
         </div>
