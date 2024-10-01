@@ -11,7 +11,7 @@ function PetItem({ pet }) {
           src={pet.image}
           className="transform duration-500 ease-in-out hover:brightness-75"
           fill
-          sizes="100vw" />
+          sizes="30vw" />
       </div>
       <div className="h-48 relative">
         <div className="font-primary text-palette-primary text-2xl pt-4 px-4 font-semibold">
