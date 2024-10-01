@@ -5,7 +5,7 @@ function PetsList({ pets }) {
 
   return (
     <>
-      <div>
+      <div className="mx-auto">
         <div className="flex justify-start space-x-2 w-full font-primary">
           <div className="flex flex-col items-start space-y-1 flex-grow">
             <input
