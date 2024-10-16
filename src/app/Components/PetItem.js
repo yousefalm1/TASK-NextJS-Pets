@@ -6,10 +6,19 @@ const btnStyle =
 
 function PetItem({ pet }) {
   const [changePetImage, setChangePetImage] = useState(pet.image);
+  const [isAdopted, setIsAdopted] = useState(false);
+
+  const handleAdoptClick = () => {
+    if (window.confirm("Are u sure u want to adopt one!")) {
+      setIsAdopted(true);
+    }
+  };
 
   const handlePetChange = () => {
     setChangePetImage(changePetImage === pet.image ? pet.image2 : pet.image);
   };
+
+  if (isAdopted) return;
 
   return (
     <div className="h-120 w-72 rounded shadow-lg mx-auto border border-palette-lighter">
@@ -33,7 +42,7 @@ function PetItem({ pet }) {
           <button type="button" className={btnStyle} onClick={handlePetChange}>
             Pet
           </button>
-          <button type="button" className={btnStyle}>
+          <button type="button" className={btnStyle} onClick={handleAdoptClick}>
             Adopt
           </button>
         </div>
